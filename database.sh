@@ -10,4 +10,4 @@ RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysq
 sleep 5
 RUN echo "CREATE DATABASE liferay"
 
-RUN echo "GRANT ALL ON *.* TO mgaya@'%' IDENTIFIED BY 'mgaya' WITH GRANT OPTION; FLUSH PRIVILEGES" | mysql
+RUN echo "GRANT ALL ON *.* TO chux@'%' IDENTIFIED BY 'chux' WITH GRANT OPTION; FLUSH PRIVILEGES" | mysql
